@@ -1,9 +1,8 @@
 # Migration from REST to GraphQl
-## GraphiQl
 ### http://localhost:8080/graphql
 
 * ADD
-mutation{
+```mutation{
   createContact(input:{
     firstName:"Anant",
     lastName:"Rungta",
@@ -13,29 +12,29 @@ mutation{
     id
     firstName
   }
-}
+}```
 
 * QUERY1
-query{
+```query{
   getContacts{
     firstName
     lastName
     company
   }
-}
+}```
 
 * QUERY2
-query{
+```query{
  getOneContact(id:"5db7345ae90bec1ccc4fddb5"){
     firstName
     lastName
     company
     email
   }
-}
+}```
 
 * ALIASES
-query{
+```query{
   one:getOneContact(id:"5db7345ae90bec1ccc4fddb5"){
     firstName
     lastName
@@ -46,10 +45,10 @@ query{
     firstName
     lastName
   }
-}
+}```
 
 * FRAGMETS 
-query{
+```query{
   one:getOneContact(id:"5db7345ae90bec1ccc4fddb5"){
   ...contactFragment
   }
@@ -62,19 +61,19 @@ fragment contactFragment on Contact {
     firstName
     lastName
     company
-}
+}```
 
 * UPDATE
-mutation{
+```mutation{
   updateContact(input:{
     id:"5db7345ae90bec1ccc4fddb5",
     firstName:"BoaAli"
   }){
     firstName
   }
-}
+}```
 
 * DELETE
-mutation{
+```mutation{
   deleteContact(id:"5db7345ae90bec1ccc4fddb5")
-}
+}```
