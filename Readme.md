@@ -1,4 +1,6 @@
 # Migration from REST to GraphQl
+### npm i
+### npm start
 ### http://localhost:8080/graphql
 
 * ADD
