@@ -103,3 +103,11 @@ mutation{
   deleteContact(id:"5db7345ae90bec1ccc4fddb5")
 }
 ```
+# ES6 setup for graphQl
+ ```
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+  ```
