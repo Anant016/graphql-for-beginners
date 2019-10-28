@@ -1,3 +1,8 @@
+# What is GraphQl
+Not a `db` or a `client` or a `server`.<br/>
+
+It is A `Query Language` for your API.
+
 # Why GraphQl
 1. Better way to fetch data from multiple resources.
 2. Minimize no. of calls to the server.
