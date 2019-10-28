@@ -1,3 +1,8 @@
+# Why GraphQl
+1. Better way to fetch data from multiple resources.
+2. Minimize no. of calls to the server.
+3. Get just the data you need i.e by running Queries.
+
 # Migration from REST to GraphQl
 ### 1. npm i
 ### 2. npm start
