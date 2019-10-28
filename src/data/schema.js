@@ -1,5 +1,5 @@
 import {resolvers} from './resolvers'
-import {makeExecutableSchema} from  'graphql-tools'
+import {makeExecutableSchema} from  'graphql-tools' //buildSchem
 
 const typeDefs=`
       type Contact {
