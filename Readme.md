@@ -12,7 +12,8 @@
     id
     firstName
   }
-}```
+}
+```
 
 * QUERY1
 ```query{
@@ -21,7 +22,8 @@
     lastName
     company
   }
-}```
+}
+```
 
 * QUERY2
 ```query{
@@ -31,7 +33,8 @@
     company
     email
   }
-}```
+}
+```
 
 * ALIASES
 ```query{
@@ -45,7 +48,8 @@
     firstName
     lastName
   }
-}```
+}
+```
 
 * FRAGMETS 
 ```query{
@@ -61,7 +65,8 @@ fragment contactFragment on Contact {
     firstName
     lastName
     company
-}```
+}
+```
 
 * UPDATE
 ```mutation{
@@ -71,9 +76,11 @@ fragment contactFragment on Contact {
   }){
     firstName
   }
-}```
+}
+```
 
 * DELETE
 ```mutation{
   deleteContact(id:"5db7345ae90bec1ccc4fddb5")
-}```
+}
+```
